@@ -19,6 +19,7 @@ class Nettle < Formula
   end
 
   depends_on "gmp"
+  depends_on "openssl@1.1" => :build
 
   uses_from_macos "m4" => :build
 
