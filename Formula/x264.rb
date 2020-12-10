@@ -33,8 +33,8 @@ class X264 < Formula
   if MacOS.version <= :high_sierra
     # Stack realignment requires newer Clang
     # https://code.videolan.org/videolan/x264/-/commit/b5bc5d69c580429ff716bafcd43655e855c31b02
-    depends_on "gcc"
-    fails_with :clang
+    # depends_on "gcc"
+    # fails_with :clang
   end
 
   def install
